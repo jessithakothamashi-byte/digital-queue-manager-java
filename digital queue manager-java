@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class DigitalQueueManager {
+    public static void main(String[] args) {
+
+        Queue<String> queue = new LinkedList<>();
+
+        queue.add("Token-101");
+        queue.add("Token-102");
+        queue.add("Token-103");
+
+        System.out.println("===== DIGITAL QUEUE =====");
+
+        while (!queue.isEmpty()) {
+            String token = queue.poll();
+            System.out.println("Serving: " + token);
+        }
+
+        System.out.println("All customers served.");
+    }
+}
+OUTPUT:
+===== DIGITAL QUEUE =====
+Serving: Token-101
+Serving: Token-102
+Serving: Token-103
+All customers served.
